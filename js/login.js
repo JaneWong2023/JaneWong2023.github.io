@@ -15,7 +15,7 @@ document.querySelector('#login-button').addEventListener('click',(event) => {
 
 //return to homepage if login is successful
   user.login(username, password).then(user => {
-    window.location.href="index.html"
+    window.location.href="home.html"
   }).catch(error => {
     alert(error)
   })
