@@ -1,56 +1,53 @@
-.image {
-  text-align: left;
+/*--------这是style.css----------*/
+.body{
+  background-color: #000000;
 }
-.nav-bottom {
-  margin-top: 90%;
-}
-.navbar {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
-}
+/* --------background----------- */
+.background--custom {
+    background-color: #000000;
+    width: 100vw;
+    height: 110vh;
+    position: absolute;
+    overflow: hidden;
+    z-index: -2;
+    top: 0;
+    left: 0;
+  }
+  canvas#canvas {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    transform: rotate(0deg) scale(2) translateY(0%);
+    --gradient-color-1: #4cebde; 
+    --gradient-color-2: #8cb866; 
+    --gradient-color-3: #ba639e;  
+    --gradient-color-4: #8666ca;
+    --gradient-speed: 0.000019999999999999998;
+  }
+  /* -------navbar--------- */
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.5); 
+  }
+  
+  /*-----MyInfo-----------*/
+  .HelloJaneWong {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh; /* 让容器占满视口高度 */
+    align-items: center; /* 垂直居中 */
+    justify-items: center; /* 水平居中 */
 
-.carousel {
-  width: 100%;
-}
-
-.post-card {
-  margin-bottom: 20px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 15px;
-  background-color: #f8f9fa;
-  transition: box-shadow 0.3s ease-in-out;
-  width: 100%; /* 使用相对单位，使卡片宽度自适应屏幕大小 */
-  max-width: auto; 
-  height: auto; /* 自适应高度 */
-  top: auto; /* 移除固定的定位属性 */
-  left: auto; /* 移除固定的定位属性 */
-  gap: 0px; /* 不再需要间隙 */
-  opacity: 1; /* 移除透明度 */
-}
-
-.post-card:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.card-title {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.card-text {
-  font-size: 1rem;
-}
-
-.post-thumbnail {
-  width: 100px; /* 缩略图宽度 */
-  height: auto; /* 自适应高度 */
-  float: right;
-  margin-left: 15px;
-}
-
-.nav-item-flex{
-  display: inline-flex;
-  align-items: center;
-}
-
+    }
+    
+    .div1 {  
+      font-size: 150px;
+    }
+    .div2 { 
+    font-size:30px; 
+    grid-column: 3/6;
+    }
+    
