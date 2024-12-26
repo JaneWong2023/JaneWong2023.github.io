@@ -50,18 +50,18 @@ canvas#canvas {
   height: 100vh;
   align-items: center;
   justify-items: center;
-  text-shadow: 6px 8px 8px #ffffff39;
 }
 
 .div1 {  
   font-size: 120px;
+  text-shadow: 6px 8px 8px #ffffff39;
 }
 
 .div2 { 
   font-size: 20px; 
   grid-column: 3/6;
-  font-weight: 500;
-  /* text-shadow: 5px 8px 8px #ffffff39; */
+  font-weight: 300;
+  text-shadow: 6px 8px 8px #ffffff39;
 }
 .Hello{
   border: #ffffff44 2px solid;
@@ -77,8 +77,20 @@ canvas#canvas {
   width: 200px;
   text-align: center;
   margin-top: 40px;
+  color: #fcfcfc92;
+  text-shadow: 2px 5px 5px #ffffff60;
 }
 
+.Contact-button:hover{
+  background-color: #ffffff41;
+  color: #fcfcfc;
+  text-shadow: 2px 5px 5px #ffffff60;
+  width: 210px;
+  height: 40px;
+  text-align: center;
+  justify-items: center;
+
+}
 /*---------------------Skills---------------------*/
 #skills {
   display: flex;
